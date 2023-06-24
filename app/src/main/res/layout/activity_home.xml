@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo"
+            android:longClickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Welcome!"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="14dp"
+            android:text="Fredrick John Fredrick Fredrick "
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/welcomeText"
+            app:layout_constraintTop_toBottomOf="@id/welcomeText" />
+
+
+        <ImageView
+            android:id="@+id/fingerScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ion_finger_print"
+            app:layout_constraintStart_toStartOf="@id/userName"
+            app:layout_constraintTop_toBottomOf="@id/userName" />
+
+        <ImageView
+            android:id="@+id/capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:src="@drawable/uil_capture"
+            app:layout_constraintBottom_toBottomOf="@+id/fingerScanner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fingerScanner" />
+
+
+        <TextView
+            android:id="@+id/addFinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="34dp"
+            android:gravity="center_horizontal|top"
+            android:text="Add \n Fingerprint"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/fingerScanner"
+            app:layout_constraintStart_toStartOf="@id/fingerScanner"
+            app:layout_constraintTop_toBottomOf="@id/fingerScanner" />
+
+        <TextView
+            android:id="@+id/addFingerCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="34dp"
+            android:gravity="center_horizontal|top"
+            android:text="Completed"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/fingerScanner"
+            app:layout_constraintStart_toStartOf="@id/fingerScanner"
+            app:layout_constraintTop_toBottomOf="@id/fingerScanner" />
+
+        <TextView
+            android:id="@+id/addCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="34dp"
+            android:gravity="center_horizontal|top"
+            android:text="Photo \n Capture"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/capture"
+            app:layout_constraintStart_toStartOf="@id/capture"
+            app:layout_constraintTop_toBottomOf="@id/capture" />
+
+        <TextView
+            android:id="@+id/addCaptureCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="34dp"
+            android:gravity="center_horizontal|top"
+            android:text="Completed"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/capture"
+            app:layout_constraintStart_toStartOf="@id/capture"
+            app:layout_constraintTop_toBottomOf="@id/capture" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/upload"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Upload"
+            android:background="@drawable/ripple_effect"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/capture2"
+            android:layout_width="160dp"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/Transparent"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:paddingHorizontal="30dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

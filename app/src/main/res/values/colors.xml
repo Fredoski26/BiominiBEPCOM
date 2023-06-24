@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#10cd3F</color>
+    <color name="colorPrimaryDark">#03961F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Transparent">#00FFFFFF</color>
+    <color name="colorSet">#1F3658</color>
+    <color name="colorAccent">#1F3658</color>
+    <color name="finger">#2F80ED</color>
+    <color name="retake">#FB0303</color>
+
+    <color name="purple_200">#1F3658</color>
+    <color name="purple_500">#1F3658</color>
+    <!--<color name="purple_700">#03961F</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>-->
+
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorSupremaPrimary">#b23f0a</color>
+    <color name="colorSupremaLogText">#606060</color>
+    <color name="colorSupremaSettingBG">#efefef</color>
+    <color name="colorSupremaLightGray">#efefef</color>
+    <color name="colorSupremaText">#000000</color>
+    <color name="colorSupremaDarkSpace">#cfcfcf</color>
+
+
+</resources>
